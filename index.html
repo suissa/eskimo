@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Eskimo - rapidly create Node.js powered API's, online stores, and apps</title>
+  <meta name="description" content="Eskimo is the CLI for building with igloo.  Rapidly create Node.js powered API's, online stores, and apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='//fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="header-container">
+    <header class="wrapper clearfix">
+      <div id="eskimo-logo"></div>
+      <h1 class="title">Eskimo</h1>
+      <hr />
+      <p>Eskimo helps you to rapidly create <a href="http://nodejs.org" target="_blank">Node.js</a> powered API's, online stores, and apps in general (known as "<a href="http://igloojs.com" target="_blank">igloos</a>").</p>
+      <pre><code>npm install -g eskimo</code></pre>
+    </header>
+  </div>
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+
+      <article>
+        <header>
+          <h2>Commands</h2>
+          <hr />
+          <p>Bundled with the CLI are simple commands and options.</p>
+          <pre class="text-left">
+<code>eskimo --help</code>
+<code>Usage: eskimo [options] [command]</code>
+<code> </code>
+<code>Commands:</code>
+<code> </code>
+<code>  create &lt;dirname&gt;       create a new igloo</code>
+<code>  model &lt;name&gt;           create a new model</code>
+<code>  view &lt;name&gt;            create a new view</code>
+<code>  controller &lt;name&gt;      create a new controller</code>
+<code> </code>
+<code>Options:</code>
+<code> </code>
+<code>  -h, --help                output usage information</code>
+<code>  -V, --version             output the version number</code>
+<code>  -N, --no-update-notifier  disable update notifier</code>
+<code>  -T, --no-tracking         disable anonymous tracking</code>
+          </pre>
+          <p>Once you've created an igloo, install its dependencies.</p>
+          <pre><code>npm install</code></pre>
+          <p>Now you can run it in development&hellip;</p>
+          <pre><code>DEBUG=* node app</code></pre>
+          <p>&hellip; or production modes.</p>
+          <pre><code>sudo NODE_ENV=production node app</code></pre>
+        </header>
+        <section>
+          <h2>Examples</h2>
+          <hr />
+          <p>Coming soon&hellip;</p>
+        </section>
+        <section>
+          <h2>Dependencies</h2>
+          <hr />
+          <p>Built with open-source packages, such as&hellip;</p>
+          <ul>
+            <li><a href="https://github.com/visionmedia/express" target="_blank">Express</a></li>
+            <li><a href="https://github.com/jaredhanson/electrolyte" target="_blank">Electrolyte</a></li>
+            <li><a href="https://github.com/LearnBoost/mongoose" target="_blank">Mongoose</a></li>
+            <li><a href="https://github.com/visionmedia/jade" target="_blank">Jade</a></li>
+            <li><a href="https://github.com/less/less.js" target="_blank">LESS</a></li>
+            <li><a href="https://github.com/evilpacket/helmet" target="_blank">Helmet</a></li>
+            <li><a href="https://github.com/jaredhanson/passport" target="_blank">Passport</a></li>
+            <li><a href="https://github.com/flatiron/winston" target="_blank">Winston</a></li>
+            <li><a href="https://github.com/visionmedia/mocha" target="_blank">Mocha</a></li>
+            <li><a href="https://github.com/chaijs/chai" target="_blank">Chai</a></li>
+            <li><a href="https://github.com/gulpjs/gulp" target="_blank">Gulp</a></li>
+            <li><a href="https://github.com/jshint/jshint" target="_blank">JSHint</a></li>
+          </ul>
+          <p>&hellip; and dozens more.</p>
+        </section>
+      </article>
+
+    </div>
+    <!-- #main -->
+  </div>
+  <!-- #main-container -->
+
+  <div class="footer-container">
+    <footer class="wrapper">
+      <h2>Source</h2>
+      <hr />
+      <p>View <a href="https://github.com/niftylettuce/eskimo" target="_blank">repository</a> or file an <a href="https://github.com/niftylettuce/eskimo/issues" target="_blank">issue</a>.</p>
+      <p>
+        <a href="https://npmjs.org/package/eskimo" target="_blank"><img src="http://img.shields.io/npm/v/eskimo.svg?style=flat" alt="" /></a>
+        <a href="http://img.shields.io/travis/niftylettuce/eskimo.svg?style=flat" target="_blank"><img src="http://img.shields.io/travis/niftylettuce/eskimo.svg?style=flat" alt="" /></a>
+        <a href="https://gemnasium.com/niftylettuce/eskimo" target="_blank"><img src="http://img.shields.io/gemnasium/niftylettuce/eskimo.svg?style=flat" alt="" /></a>
+        <a href="https://npmjs.org/package/eskimo" target="_blank"><img src="http://img.shields.io/npm/dm/eskimo.svg?style=flat" alt="" /></a>
+      </p>
+      <p><small>Snow Shoes by Marc Serre from The Noun Project &bull; Eskimo by <a href="https://github.com/niftylettuce" target="_blank">@niftylettuce</a></small></p>
+    </footer>
+  </div>
+
+  <!--
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+  </script>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  -->
+
+  <!-- Google Analytics -->
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function () {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-51798170-1');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>

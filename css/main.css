@@ -1,0 +1,377 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* <https://github.com/h5bp/mobile-boilerplate/wiki/Mobile-Matrices> */
+@media (max-width: 1023px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+ * Colour Palette
+ * <http://www.colourlovers.com/palette/1933518/ESKIMO_IGLOO>
+ *
+ * Pearl - #D7E0E2
+ * air - #59B2DB
+ * biru - #5B78C6
+ * Vergeing on Purple - #594CCE
+ * ESKIMO - #630EA0
+ * */
+
+@font-face {
+    font-family: 'colaboratelightregular';
+    src: url('/font/ColabLig-webfont.eot');
+    src: url('/font/ColabLig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/ColabLig-webfont.woff') format('woff'),
+         url('/font/ColabLig-webfont.ttf') format('truetype'),
+         url('/font/ColabLig-webfont.svg#colaboratelightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'colaborate-thinregular';
+    src: url('/font/ColabThi-webfont.eot');
+    src: url('/font/ColabThi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/ColabThi-webfont.woff') format('woff'),
+         url('/font/ColabThi-webfont.ttf') format('truetype'),
+         url('/font/ColabThi-webfont.svg#colaborate-thinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'colaborate-mediumregular';
+    src: url('/font/ColabMed-webfont.eot');
+    src: url('/font/ColabMed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/ColabMed-webfont.woff') format('woff'),
+         url('/font/ColabMed-webfont.ttf') format('truetype'),
+         url('/font/ColabMed-webfont.svg#colaborate-mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background: #D7E0E2 url('/img/subtle_white_feathers.png') repeat;
+  font-family: 'colaboratelightregular', sans-serif;
+  text-align: center;
+  color: #666; /* ExpressJS.com uses this */
+  line-height: 1.25;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    background-image: url('/img/subtle_white_feathers_@2X.png');
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #630EA0; /* ESKIMO */
+  font-family: 'colaborate-thinregular', sans-serif;
+  font-weight: normal;
+}
+
+a, a:visited {
+  color: #594CCE; /* Vergeing on Purple */
+  text-decoration: underline;
+  font-family: 'colaborate-mediumregular', sans-serif;
+}
+a:hover {
+  color: #630EA0; /* ESKIMO */
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+#eskimo-logo {
+  margin: 0 auto;
+  background-image: url('/img/eskimo.png');
+  background-image: url('/img/eskimo.svg'), none;
+  width: 300px;
+  height: 270px;
+  background-size: 300px 270px;
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+}
+
+hr {
+  border-top: 3px solid #59B2DB; /* air */
+  height: 4px;
+  width: 25%;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+ul li a, ul li a:visited {
+  background-color: #59B2DB; /* air */
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 12px;
+  margin: 12px;
+  display: block;
+  color: #D7E0E2; /* Pearl */
+  text-decoration: none;
+  font-family: 'colaboratelightregular', sans-serif;
+}
+
+ul li a:hover {
+  color: #D7E0E2; /* Pearl */
+  background-color: #5B78C6; /* biru */
+}
+
+pre {
+  padding: 20px;
+  background-color: #59B2DB; /* air */
+  border: 1px solid #D7E0E2; /* Pearl */
+  color: #D7E0E2; /* Pearl */
+  font-size: 18px;
+  /* <http://stackoverflow.com/a/10374189> */
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+strong {
+  font-family: 'colaborate-mediumregular', sans-serif;
+}
+
+code, kbd, pre, samp {
+  font-family: 'Inconsolata', monospace, serif;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
